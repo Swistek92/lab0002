@@ -100,6 +100,8 @@ public class Lab01
         if (b == 0 || d == 0)
         {
             Console.WriteLine("brak rozwiazania");
+            Console.WriteLine("brak rozwiazania");
+
             Main();
         }
 
