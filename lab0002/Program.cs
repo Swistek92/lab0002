@@ -47,6 +47,16 @@ public class Lab01
             zadanie8();
             Main();
         }
+        else if (zadanie == 9)
+        {
+            zadanie9();
+            Main();
+        }
+        else if (zadanie == 10)
+        {
+            zadanie10();
+            Main();
+        }
         else if (zadanie == 0)
         {
             Environment.Exit(0);
@@ -244,6 +254,48 @@ public class Lab01
 
     }
 
+    private static void zadanie9()
+    {
+        Console.WriteLine("wprowadź  3 liczby ");
+        int a = Convert.ToInt32(Console.ReadLine());
+        int b = Convert.ToInt32(Console.ReadLine());
+        int c = Convert.ToInt32(Console.ReadLine());
+
+        a = a + b + c;
+        b = a - (b + c);
+        c = a - (b + c);
+        a = a - (b + c);
+
+        Console.WriteLine("a=" +a + " b=" + b + " c=" + c);
+
+    }
+    private static void zadanie10()
+    {
+        Console.WriteLine("wprowadź liczbe ");
+        int a = Convert.ToInt32(Console.ReadLine());
+        int b = a % 10;
+
+        Console.WriteLine("ostatnia cyfra to" + b);
+
+
+    }
+
+    private static void zadanie11()
+    {
+        
+        int x, y;
+        x = 1;
+        y = 1;
+        if (x <= -2) {
+            y = -1;
+        }if (x > -2 && x > -1)
+        {
+            y = x - y;
+        }
+    }
+
+
+
 
     static private int GetPow(int baseNum, int powNum)
 
@@ -256,6 +308,9 @@ public class Lab01
         return result;
 
     }
+
+   
+
 
 
 
